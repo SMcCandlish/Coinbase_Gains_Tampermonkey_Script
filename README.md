@@ -1,7 +1,7 @@
 Coinbase Gains – TamperMonkey User Script
 ===========================================
 
-**This is a user script for Coinbase.com, a cryptocurrency broker/exchange, to show one's gains in green or losses in red, on both the Portfolio/account and Home/dashboard pages.**
+**This is a user script for Coinbase.com, a cryptocurrency broker/exchange, to show one's gain in green or loss (if it comes to that) in red, on both the Portfolio/account and Home/dashboard pages.**
 
 It has been tested in TamperMonkey, will probably also work in Violent monkey, might also work with old GreaseMonkey, probably with tweaks, and maybe also in Safari Userscripts, but has not been tested with those as of this version.
 
