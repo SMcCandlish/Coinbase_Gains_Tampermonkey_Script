@@ -20,5 +20,6 @@ Credit: This is almost entirely the work of [kevduc](https://github.com/kevduc/u
 * Moved the display to top center, away from current portfolio value amount, and make it slightly smaller. I find this less visually confusing than having it immediately next to the portfolio value.
 * Made it work on the Home/dashboard page as well as the Portfolio/account page.
 * Made it an `h2` heading. For semantic sensibility, a page should only have one `h1`, or at least not competing ones in the same section of the document.  I'm not even sure this really logically qualifies as a heading; `div` might be better.
+* Wrote documentation.
 
 Of course, kevduc is welcome to adapt some of this back into his own version.  One could also expand on it further, e.g. with different positioning options via a new constant defined at the top of the script. I actually experimented with other layouts, including right-justified, under the timespan selector, in addition to this centered version, and the original left version, and a left version underneath the currevent portfolio amount line.
