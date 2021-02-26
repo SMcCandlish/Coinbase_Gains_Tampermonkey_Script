@@ -8,7 +8,7 @@ Usage:
 4. Change `currencySymbol` to whatever you want for your currency, such as: `US$`, `USD`, `£`, `GBP`, or whatever. It defaults to: `$`.  This is a literal string; you do not have to escape `$`, and you can't use HTML or other code in it (e.g. for coloring).
 5. Save.
 6. Make sure the script is enabled in TamperMonkey.
-7. Go to <https://www.Coinbase.com>
+7. Go to <https://www.Coinbase.com> and log in.
 8. Click TamperMonkey's browser icon and make sure this script is actually enabled for this site, and that TamperMonkey is allowed to affect this site.
 9. If you don't see the gains display, reload the page.  If you still don't, it's possible Coinbase changed HTML elment classes and the script will need to be updated.
 
