@@ -10,6 +10,8 @@ It uses JSON to track changes in investment level, too if your browser permits T
 Usage
 -----
 
+These instructions are for TamperMonkey, though the process will be similar in other user-script extensions:
+
 1. Install.  In TamperMonkey's browser extension config page there's an option to import from URL, and you can do that via the URL of [this raw script page](https://raw.githubusercontent.com/SMcCandlish/Coinbase_Gains_TamperMonkey_Script/master/CoinbasePortfolioGains.user.js) (which Github goes out of its way to prevent the display of when this README.md is read on Github itself, grrr...). Depending on how your browser is set up, clicking that might import it directly into TamperMonkey for you.
 2. Edit script in TamperMonkey:
 3. Change `totalInvestment` to the amount (in your currency) that you've invested. Just numerals and `.`, no currency symbols, e.g.: `1234.56`
