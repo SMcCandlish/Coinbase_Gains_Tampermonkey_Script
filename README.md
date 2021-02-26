@@ -1,7 +1,9 @@
 # Coinbase Gains TamperMonkey User Script
+
 This is a user script for TamperMonkey (might also work with old GreaseMonkey, probably with tweaks), to show one's gains in green or losses in red at Coinbase.com, on the Portfolio/account and Home/dashboard pages. It uses JSON to track changes in investment level, too (if your browser permits TamperMonkey to save local data).
 
 Usage:
+
 1. Install.  In TamperMonkey's browser extension config page there's an option to import from URL, and you can do that via the URL of [this raw script page](https://raw.githubusercontent.com/SMcCandlish/Coinbase_Gains_TamperMonkey_Script/master/CoinbasePortfolioGains.user.js) (which Github goes out of its way to prevent the display of when this README.md is read on Github itself, grrr...). Depending on how your browser is set up, clicking that might import it directly into TamperMonkey for you.
 2. Edit script in TamperMonkey:
 3. Change `totalInvestment` to the amount (in your currency) that you've invested. Just numerals and `.`, no currency symbols, e.g.: `1234.56`
@@ -13,6 +15,10 @@ Usage:
 9. If you don't see the gains display, reload the page.  If you still don't, it's possible Coinbase changed HTML elment classes and the script will need to be updated.
 
 Credit: This is almost entirely the work of [kevduc](https://github.com/kevduc/userscripts/edit/master/README.md).  All I did:
+
 * Made currency symbol easy to set.
 * Moved the display to top center, away from current portfolio value amount, and make it slightly smaller. I find this less visually confusing than having it immediately next to the portfolio value.
 * Made it work on the Home/dashboard page as well as the Portfolio/account page.
+* Made it an `h2` heading. For semantic sensibility, a page should only have one `h1`, or at least not competing ones in the same section of the document.  I'm not even sure this really logically qualifies as a heading; `div` might be better.
+
+Of course, kevduc is welcome to adapt some of this back into his own version.  One could also expand on it further, e.g. with different positioning options via a new constant defined at the top of the script. I actually experimented with other layouts, including right-justified, under the timespan selector, in addition to this centered version, and the original left version, and a left version underneath the currevent portfolio amount line.
