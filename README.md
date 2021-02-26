@@ -1,8 +1,14 @@
-# Coinbase Gains – TamperMonkey User Script
+Coinbase Gains – TamperMonkey User Script
+===========================================
 
-This is a user script for TamperMonkey (might also work with old GreaseMonkey, probably with tweaks), to show one's gains in green or losses in red at Coinbase.com, on the Portfolio/account and Home/dashboard pages. It uses JSON to track changes in investment level, too (if your browser permits TamperMonkey to save local data).
+**This is a user script for Coinbase.com, a cryptocurrency broker/exchange, to show one's gains in green or losses in red, on both the Portfolio/account and Home/dashboard pages.**
 
-Usage:
+It has been tested in TamperMonkey, will probably also work in Violent monkey, might also work with old GreaseMonkey, probably with tweaks, and maybe also in Safari Userscripts, but has not been tested with those as of this version.
+
+It uses JSON to track changes in investment level, too if your browser permits TamperMonkey (or whatever) to save local data.
+
+Usage
+-----
 
 1. Install.  In TamperMonkey's browser extension config page there's an option to import from URL, and you can do that via the URL of [this raw script page](https://raw.githubusercontent.com/SMcCandlish/Coinbase_Gains_TamperMonkey_Script/master/CoinbasePortfolioGains.user.js) (which Github goes out of its way to prevent the display of when this README.md is read on Github itself, grrr...). Depending on how your browser is set up, clicking that might import it directly into TamperMonkey for you.
 2. Edit script in TamperMonkey:
@@ -14,7 +20,10 @@ Usage:
 8. Click TamperMonkey's browser icon and make sure this script is actually enabled for this site, and that TamperMonkey is allowed to affect this site.
 9. If you don't see the gains display, reload the page.  If you still don't, it's possible Coinbase changed HTML elment classes and the script will need to be updated.
 
-Credit: This is almost entirely the work of [kevduc](https://github.com/kevduc/userscripts/edit/master/README.md).  All I did:
+Credit, Changes, and Other Notes
+--------------------------------
+
+This is almost entirely the work of [kevduc](https://github.com/kevduc/userscripts/edit/master/README.md).  All I did:
 
 * Made currency symbol easy to set.
 * Moved the display to top center, away from current portfolio value amount, and make it slightly smaller. I find this less visually confusing than having it immediately next to the portfolio value.
