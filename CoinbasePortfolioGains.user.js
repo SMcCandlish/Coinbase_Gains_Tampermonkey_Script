@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Coinbase Portfolio Gains
-// @version      1.1.1.2021-02-26
+// @version      1.1.1-2021-02-26
 // @description  Shows Coinbase portfolio gain/loss
 // @author       KevDuc; tweaked by SMcCandlish
 // @namespace    https://github.com/SMcCandlish/Coinbase_Gains_TamperMonkey_Script
