@@ -1,4 +1,4 @@
-# Coinbase Gains TamperMonkey User Script
+# Coinbase Gains – TamperMonkey User Script
 
 This is a user script for TamperMonkey (might also work with old GreaseMonkey, probably with tweaks), to show one's gains in green or losses in red at Coinbase.com, on the Portfolio/account and Home/dashboard pages. It uses JSON to track changes in investment level, too (if your browser permits TamperMonkey to save local data).
 
