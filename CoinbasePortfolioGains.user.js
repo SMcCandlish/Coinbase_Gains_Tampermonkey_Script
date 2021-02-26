@@ -58,7 +58,7 @@
     async function init() {
         const balance = await document.querySelectorWhenLoaded('h1[class*="Balance__BalanceHeader"], h1[class*="Balance__BalanceHeader-ek4zs2-3"]');
 
-        const roi = document.createElement('h1');
+        const roi = document.createElement('h2');
         roi.className = balance.className;
         roi.style = `font-size: large; text-align: center;`;
         roi.id = "balanceROI-tampermonkey";
