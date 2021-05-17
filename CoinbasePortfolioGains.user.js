@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Coinbase Portfolio Gains
-// @version      1.1.1-2021-02-26
+// @version      1.1.3-2021-05-17
 // @description  Shows Coinbase portfolio gain/loss
 // @author       KevDuc; tweaked by SMcCandlish
 // @namespace    https://github.com/SMcCandlish/Coinbase_Gains_TamperMonkey_Script
@@ -11,13 +11,14 @@
 // @match        https://www.coinbase.com/*
 // @grant        none
 // @run-at       document-end
+// @icon         https://www.coinbase.com/img/favicon/favicon-128x128.png
 // ==/UserScript==
 // Based on original at: https://github.com/kevduc/userscripts
 
 (function() {
     'use strict';
 
-    const totalInvestment = 1324.62; // Change this to the total amount you invested (in your local currency)
+    const totalInvestment = 1770.34; // Change this to the total amount you invested (in your local currency)
     const currencySymbol = `$`; // Change this to whatever you need, like £.
 
     // Helper functions
@@ -63,9 +64,10 @@
         roi.style = `font-size: large; text-align: center;`;
         roi.id = "balanceROI-tampermonkey";
 
-        const periodSelector = await document.querySelectorWhenLoaded('div[class*="PeriodSelector__SelectorContainer-sc-1w75yzt-0"]');
+const periodSelector = await document.querySelectorWhenLoaded('div[class*="PeriodSelector__SelectorContainer-sc-1w75yzt-0"]');
         periodSelector.insertAdjacentElement('beforebegin', roi);
-
+const periodSelector2 = await document.querySelectorWhenLoaded('div[class*="PeriodSelector__SelectorContainer-sc-1w75yzt"]');
+        periodSelector2.insertAdjacentElement('beforebegin', roi);
         const balanceTextNode = balance.firstChild;
 
         const update = () => updateROI(balance, roi);
