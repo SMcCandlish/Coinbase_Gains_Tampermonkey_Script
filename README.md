@@ -34,3 +34,8 @@ This is almost entirely the work of [kevduc](https://github.com/kevduc/userscrip
 * Wrote documentation.
 
 Of course, kevduc is welcome to adapt some of this back into his own version.  One could also expand on it further, e.g. with different positioning options via a new constant defined at the top of the script. In addition to this centered version, I actually experimented with other layouts, including right-justified (under the timespan selector), and the original left version, and a left version underneath the current portfolio amount line.
+
+Change log:
+* 1.1.1 - initial release of fork
+* 1.1.2 - local tweaking
+* 1.1.3 - update to account for changes in Coinbase HTML on 2021-05-17
