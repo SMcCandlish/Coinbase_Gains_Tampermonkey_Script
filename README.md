@@ -1,3 +1,6 @@
+OUTDATED! This is surely too old to use at this point, since website change all the time. I'm no longer regularly using Coinbase and don't have any incentive to update this to work with whatever's changed at their site in the intervening several years. Treat this as something to look at and customize, not as something to install and expect it to work today.   — S.McC., 2024-12-14
+
+
 Coinbase Gains – TamperMonkey User Script
 ===========================================
 
