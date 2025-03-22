@@ -8,7 +8,7 @@ Coinbase Gains – TamperMonkey User Script
 
 It has been tested in TamperMonkey, will probably also work in Violentmonkey, might also work with old GreaseMonkey, probably with tweaks, and maybe also in Safari Userscripts, but has not been tested with those as of this version.
 
-It uses JSON to track changes in investment level, too if your browser permits TamperMonkey (or whatever) to save local data.
+It uses JSON to track changes in investment level, too, if your browser permits TamperMonkey (or whatever) to save local data.
 
 Usage
 -----
